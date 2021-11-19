@@ -6,6 +6,7 @@ authors = ["Igor Esposito <sposigor@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9.8"
+requests = "^2.26.0"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.11.1"
