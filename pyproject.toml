@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "cursos_alura"
 version = "0.1.0"
-description = "Curso da Alura"
+description = "Curso Alura"
 authors = ["Igor Esposito <sposigor@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.9.8"
 
 [tool.poetry.dev-dependencies]
+pylint = "^2.11.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
