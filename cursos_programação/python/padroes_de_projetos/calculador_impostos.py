@@ -1,4 +1,6 @@
-from impostos import ICMS, ISS
+from descontos import DescontosCinco, DescontosQuinhentos, SemDesconto
+from orçamento import Orcamento, Item
+from impostos import ICMS, ISS, ICPP, IKCV, template_de_imposto_condicional
 
 
 class CalculadorImpostos(object):
@@ -9,9 +11,17 @@ class CalculadorImpostos(object):
         print(imposto_calculado)
 
 if __name__ == '__main__':
-    from orçamento import Orcamento
 
     calculador = CalculadorImpostos()
-    orçamento = Orcamento(500)
-    calculador.realizar_calculo(orçamento, ISS)
-    calculador.realizar_calculo(orçamento, ICMS)
+    orcamento = Orcamento(750)
+    orcamento.adiciona_item(Item('Item 1', 100))
+    orcamento.adiciona_item(Item('Item 2', 100))
+    orcamento.adiciona_item(Item('Item 3', 250))
+    
+    print("ISS e ICMS")
+    calculador.realizar_calculo(orcamento, ISS())
+    calculador.realizar_calculo(orcamento, ICMS())
+    
+    print("ICPP e IKCV")
+    calculador.realizar_calculo(orcamento, ICPP())
+    calculador.realizar_calculo(orcamento, IKCV())
