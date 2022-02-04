@@ -17,6 +17,9 @@ listaDeDestinos.push(`Curitiba`);
 listaDeDestinos.push(`Recife`);
 listaDeDestinos.push(`Belo Horizonte`);
 
+// Lembrando que numa lista o indice começa em 0
+listaDeDestinos.splice(1, 1); // Remove o elemento na posição 1 e 1 elemento
 
 // Imprimindo a lista de destinos
 console.log(listaDeDestinos);
+console.log(listaDeDestinos[1]);
