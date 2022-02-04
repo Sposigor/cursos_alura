@@ -13,7 +13,8 @@ const listaDeDestinos = new Array(
 
 const idadeComprador = 17;
 const estaAcompanhada = true;
-const 
+const temPassagemComprada = false;
+
 console.log(listaDeDestinos);
 
 if (idadeComprador >= 18) {
@@ -26,6 +27,12 @@ if (idadeComprador >= 18) {
     console.log("Não é maior de idade e não posso vender");
 }
 
+console.log("Embarque: \n\n")
+if(idadeComprador >= 18 && temPassagemComprada){
+    console.log("Boa viagem");
+}else{
+    console.log("Você não pode embarcar");
+} 
 
 // listaDeDestinos.push(`Curitiba`);
 // listaDeDestinos.push(`Recife`);
