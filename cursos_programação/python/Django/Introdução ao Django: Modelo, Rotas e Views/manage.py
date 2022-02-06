@@ -18,5 +18,13 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+def fazendo():
+    print("Fazendo")
+    print("Porque sim")
+    print("testando mais ainda")
+    print("Sempre testando")
+    print("testando a minha vida")
+    print("funciona poha")
+
 if __name__ == '__main__':
     main()
